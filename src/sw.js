@@ -1,4 +1,6 @@
 const base_url = "https://api.football-data.org/v2/"
+const deploy_url = "https://fadillahrizki.github.io/footballM/"
+const local_url = "http://localhost:8080"
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
@@ -7,6 +9,16 @@ workbox.core.clientsClaim();
 
 workbox.routing.registerRoute(
   ({url}) => url.origin === base_url,
+  new workbox.strategies.StaleWhileRevalidate()
+);
+
+workbox.routing.registerRoute(
+  ({url}) => url.origin === deploy_url,
+  new workbox.strategies.StaleWhileRevalidate()
+);
+
+workbox.routing.registerRoute(
+  ({url}) => url.origin === local_url,
   new workbox.strategies.StaleWhileRevalidate()
 );
 
