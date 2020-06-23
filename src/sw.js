@@ -11,6 +11,11 @@ workbox.routing.registerRoute(
   new workbox.strategies.StaleWhileRevalidate()
 );
 
+workbox.routing.registerRoute(
+  new RegExp(base_url),
+  new workbox.strategies.StaleWhileRevalidate()
+);
+
 self.addEventListener('push', (event) => {
   const title = 'Get Started With Workbox';
   const options = {
