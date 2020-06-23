@@ -1,6 +1,6 @@
 var webPush = require('web-push');
 
-const vapidKeys ={"publicKey":"BIA-8dRWRGu3eQ993XopsVpKR5ZogMu8RE0V9GzrIcOibbzMeJkJ_u-qDJKvG3X8drpGHl06jO4IxffmecsFDgQ","privateKey":"LdfgS70z7fi3WQMd6AKlbVxzR0PSBcHXd7C136Nw6Iw"}
+const vapidKeys ={"publicKey":"BHyNyPIDxf9lH_T0Q5rT6LxZwbbmTKfRIQ2lcgqEGpbgbXKhEOGFVVlFRJ75Wgh5xFux936HzC2mb1g0J9WiyoI","privateKey":"r-ENeDqltXf6H1WXebigUZCFWw7HN8aQSAOqJTkPXhc"}
 
 webPush.setVapidDetails(
     'mailto:example@yourdomain.org',
@@ -8,10 +8,10 @@ webPush.setVapidDetails(
     vapidKeys.privateKey
 )
 var pushSubscription = {
-    "endpoint": " https://fcm.googleapis.com/fcm/send/fUD7Qqxyihc:APA91bHFa5m55QEgmpQIz5kzx8h_jrbivGpzIOEpyYvwzCbRU3P2MTe4U6Obpm4l-OzDTr8UW9KKEVbsb464uBjubbfpZ7vQrniwMdQ4wdoxDxIiTYg4l8i54XTVww5xotWbSNXPOu28",
+    "endpoint": "https://fcm.googleapis.com/fcm/send/dNzbPJmsys0:APA91bFV0MI2AmqBlX0JkOqvhwENhyHUIWU6HwoAvjif2jIaKEXjNdpKdbY2fgN6xX-Yt-OywJ8VzZse6jfkLf8obsfaH5AEg4BtP4Izmq_ZFGTVVoF0nvJOUfdhel4MC4bKjT0LZJpw",
     "keys": {
-        "p256dh": "BFmP4sYP6mPb8by3zjEvfeGkddcZf3ao0elhJVK/ZRIeI5nfTsDQagdDSJ8mUaqHbMME8FpXeGAK3UzbxvriMrk=",
-        "auth": "UF6+mznLkgcL2K0GFMzI2A=="
+        "p256dh": "BI0CQ3ZQ1NIS6ezlqym0/z2ARAmQD1kujPtTdWoX1BaGMC2NVL92AtcZ69UHuAGuYPTeLLAJHtncPkIdPJ33h4k=",
+        "auth": "aHS64qcMp4rMK8jJ+NZYnA=="
     }
 };
 var payload = 'Halo!! Kembali lagi dengan saya :)';

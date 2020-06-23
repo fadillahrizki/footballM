@@ -1,4 +1,11 @@
 import './main'
+import './icon.png'
+
+const el = document.createElement("link")
+el.setAttribute("rel","manifest")
+el.setAttribute("href","manifest.json")
+            
+$("head").append(el)
 
 // regenerator-runtime
 import 'regenerator-runtime'

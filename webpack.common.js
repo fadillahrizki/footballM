@@ -2,7 +2,8 @@ const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const workboxPlugin = require('workbox-webpack-plugin')
 const webpack = require('webpack')
- 
+const fs = require('fs')
+
 module.exports = {
     entry: "./src/index.js",
     output: {
